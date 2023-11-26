@@ -3,14 +3,18 @@
 #include <math.h>
 
 int main() {
-    for (int order = 1; order <= 15; ++order) {
+    
+    // declare index
+    int order,i;
+    
+    for (order = 1; order <= 15; ++order) {
         
         // init
         double est = 1.0;
         double factorial = 1.0;
         
         // calculate factorial and add to est
-        for (int i = 1; i <= order; ++i) {
+        for (i = 1; i <= order; ++i) {
             factorial *= i;
             est += 1.0 / factorial;
         }

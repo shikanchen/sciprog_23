@@ -8,14 +8,16 @@ int *allocatearray(int size) {
 
 void fillwithones(int *array, int size) {
     // init with ones
-    for (int i = 0; i < size; ++i) {
+    int i;
+    for (i = 0; i < size; ++i) {
         array[i] = 1;
     }
 }
 
 void printarray(int *array, int size) {
     // print the array
-    for (int i = 0; i < size; ++i) {
+    int i;
+    for (i = 0; i < size; ++i) {
         printf("%d ", array[i]);
     }
     printf("\n");
@@ -33,7 +35,8 @@ int main() {
     int num_sizes = sizeof(sizes) / sizeof(sizes[0]);
 
     // loop through all sizes of the setting
-    for (int i = 0; i < num_sizes; i++) {
+    int i;
+    for (i = 0; i < num_sizes; i++) {
         int size = sizes[i];
         printf("\nCreating an array of size %d\n", size);
 
