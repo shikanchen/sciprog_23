@@ -3,9 +3,13 @@
 
 
 void matmult(double A[N][P], double B[P][Q], double C[N][Q]) {
-    for (int i = 0; i < N; i++) {
-        for (int j = 0; j < Q; j++) {
-            for (int k = 0; k < P; k++) {
+    // declare loop indices
+    int i,j,k;
+    for (i = 0; i < N; i++) {
+        for (j = 0; j < Q; j++) {
+            for (k = 0; k < P; k++) {
+                
+                // multiply each corresponding elements in A B.
                 C[i][j] += A[i][k] * B[k][j];
             }
         }
