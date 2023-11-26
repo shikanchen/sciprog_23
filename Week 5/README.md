@@ -4,7 +4,7 @@
 These are the files for week 5 exercise
 
 ## Files Included
-- `week4.c`: Codes to for the week 5 exercise in one file.
+- `week5.c`: Codes to for the week 5 exercise in one file.
 
 ## How to Compile and Run
 To compile the program, use the following command:
