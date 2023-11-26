@@ -3,13 +3,16 @@
 
 // calculate Fibonacci sequence
 void fibonacci_sequence(int n) {
+    
+    // declare vars
+    int i;
     unsigned long long fib[n];
     fib[0] = 0;
     fib[1] = 1;
     printf("Fibonacci Series up to %d: %llu %llu ", n, fib[0], fib[1]);
 
     // loop to setter all elements up to n
-    for (int i = 2; i < n; ++i) {
+    for (i = 2; i < n; ++i) {
         fib[i] = fib[i - 1] + fib[i - 2];
         printf("%llu ", fib[i]);
     }
