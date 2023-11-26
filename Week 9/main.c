@@ -23,8 +23,9 @@ int main(){
         return 1;
     }
 
-
-    int i;
+    // declare loop indices
+    int i, j;
+    
     // Allocating a matrix for storing the magic square
     // as an array of pointers, where each pointer is a row 
     int **square = (int **)malloc(n * sizeof(int *));
@@ -34,7 +35,7 @@ int main(){
 
     // inputting integer data into the matrix;
     for (i = 0; i < n; i++) {
-        for (int j = 0; j < n; j++) {
+        for (j = 0; j < n; j++) {
             fscanf(f, "%d", &square[i][j]);
         }
     }
