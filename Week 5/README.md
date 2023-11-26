@@ -17,4 +17,4 @@ To run the program, use the following command:
 ```
 
 ## Note
-You will be prompted for the the number of terms for the Fibonacci sequence and the delta for artanh calculation to see the results.
+You will be prompted for the number of terms for the Fibonacci sequence and the delta for artanh calculation to see the results.
