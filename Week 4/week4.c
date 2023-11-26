@@ -12,13 +12,15 @@ double degrees2radians(double degree) {
 
 // calculate the area under the curve using the Trapezoidal Rule
 double trapezoidal_area(int points) {
+    // declare vars
+    int i;
     double a = 0;
     double b = degrees2radians(60);
     double h = (b - a) / (points - 1);
     double area = (tan(a) + tan(b)) / 2.0;
     
     // add the middle terms
-    for (int i = 1; i < points - 1; i++) {
+    for (i = 1; i < points - 1; i++) {
         double x = a + i * h;
         area += tan(x);
     }
@@ -30,8 +32,11 @@ double trapezoidal_area(int points) {
 
 int main() {
     
+    // Declare var
+    int i;
+    
     // Calculate tan(x) values
-    for (int i = 0; i < SIZE; i++) {
+    for (i = 0; i < SIZE; i++) {
         double degree = i * 5;
         double radians = degrees2radians(degree);
         tan_values[i] = tan(radians);
