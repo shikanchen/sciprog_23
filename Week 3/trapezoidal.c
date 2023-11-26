@@ -1,9 +1,11 @@
+#define _USE_MATH_DEFINES
 #include <stdio.h>
 #include <math.h>
 
 int main() {
     
     // declare vars
+    int i;
     double a = 0;
     double b = M_PI / 3;
     int N = 12;
@@ -11,7 +13,7 @@ int main() {
     double sum = tan(a) + tan(b);
 
     // sum for 2 * f(x_i)
-    for (int i = 1; i < N; i++) {
+    for (i = 1; i < N; i++) {
         double x_i = a + i * h;
         sum += 2 * tan(x_i);
     }
